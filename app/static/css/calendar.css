@@ -1,16 +1,38 @@
 .week-selector {
     padding-bottom: 30px;
+    position: relative;
 }
-
 .week-selector .col-auto {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10rem;
 }
-
+/* Removed ALL button styling to keep your original styling */
 .date-range {
     font-weight: bold;
     font-size: 1.5rem;
+    min-width: 200px;
     text-align: center;
+    position: relative;
+    height: 40px;
+    overflow: hidden;
+}
+/* Animation styles for the date text */
+.date-slider-animation-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.date-slider-animation-element {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
 }
