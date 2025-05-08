@@ -2,19 +2,46 @@
 
 {% block title %}Home | memr.io{% endblock %}
 
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/calendar.css') }}">
+{% endblock %}
+
 {% block content %}
 <!-- Week Selector Wheel -->
 <div class="row week-selector my-3">
-    <div class="col-auto">
-        <button class="btn btn-outline-primary">left</button>
-        <button class="btn btn-outline-primary">right</button>
+    <div class="col-auto mx-auto">
+        <button class="wk-slider-btn rounded-pill px-4 py-2"><i class="bi bi-arrow-bar-left"></i></button>
+        <div class="date-range text-center">
+            <span>May 05 - May 11</span>
+        </div>
+        <button class="wk-slider-btn rounded-pill px-4 py-2"><i class="bi bi-arrow-bar-right"></i></i></button>
     </div>
 </div>
 
+<hr>
+
 <!-- Task Breakdown -->
-<div class="row">
+<div class="row text-center">
     <div class="col">
-        <p>tasks breakdown</p>
+        <p>Monday</p>
+    </div>
+    <div class="col">
+        <p>Tuesday</p>
+    </div>
+    <div class="col">
+        <p>Wednesday</p>
+    </div>
+    <div class="col">
+        <p>Thursday</p>
+    </div>
+    <div class="col">
+        <p>Friday</p>
+    </div>
+    <div class="col">
+        <p>Saturday</p>
+    </div>
+    <div class="col">
+        <p>Sunday</p>
     </div>
 </div>
 {% endblock %}

@@ -1,0 +1,12 @@
+.wk-slider-btn {
+    background-color: #ffb0b5;
+    border: none;
+}
+
+.wk-slider-btn {
+    transition: transform 0.3s ease;
+}
+
+.wk-slider-btn:hover {
+    transform: scale(1.05);
+}

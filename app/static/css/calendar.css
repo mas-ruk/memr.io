@@ -1,0 +1,16 @@
+.week-selector {
+    padding-bottom: 30px;
+}
+
+.week-selector .col-auto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.date-range {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}

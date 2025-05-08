@@ -55,6 +55,7 @@ body {
     color: #333;
     text-decoration: none;
     transition: all 0.2s ease;
+    font-size: 1.2em;
 }
 
 .sidebar-menu li a:hover {
