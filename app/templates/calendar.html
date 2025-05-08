@@ -10,11 +10,11 @@
 <!-- Week Selector Wheel -->
 <div class="row week-selector my-3">
     <div class="col-auto mx-auto">
-        <button class="wk-slider-btn rounded-pill px-4 py-2"><i class="bi bi-arrow-bar-left"></i></button>
+        <button class="wk-slider-btn rounded-pill px-4 py-2" id="date-left"><i class="bi bi-arrow-bar-left"></i></button>
         <div class="date-range text-center">
-            <span>May 05 - May 11</span>
+            <span id="date-slider-range">May 05 - May 11</span>
         </div>
-        <button class="wk-slider-btn rounded-pill px-4 py-2"><i class="bi bi-arrow-bar-right"></i></i></button>
+        <button class="wk-slider-btn rounded-pill px-4 py-2" id="date-right"><i class="bi bi-arrow-bar-right"></i></i></button>
     </div>
 </div>
 
@@ -44,4 +44,6 @@
         <p>Sunday</p>
     </div>
 </div>
+
+<script type="module" src="{{ url_for('static', filename='js/week_slider.js') }}"></script>
 {% endblock %}
